@@ -8,3 +8,9 @@ function firebaseUpdate() {
   firebase.database().ref('members').update(members)
   console.warn('수정 완료')
 }
+
+
+function firebaseRemove() {
+  firebase.database().ref('members/member1').remove()
+  console.warn('삭제 완료')
+}
